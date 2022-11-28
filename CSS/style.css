@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 section{
     width: 100%;
@@ -129,5 +132,71 @@ nav{
     width: 40px;
     height: 40px;
     gap: 30px;
-    
+}
 
+/*-------------About-----------------*/
+
+.about{
+    background-color:#fafafa ;
+}
+.about-me{
+    width: 90vw;
+    margin: auto;
+}
+
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 1px 9px 31px -15px #000;
+}
+
+section .profile{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.about-head h1{
+    font-size: 40px;
+    
+    letter-spacing: 1px;
+    color: #111;
+    font-weight: 700;
+    padding-top:30px;
+    margin-left: 8px;
+    
+}
+
+.about-content{
+    display: flex;
+    text-align:start ;
+    justify-content: center;
+    margin: 40px 0;
+    color: #555;;
+    line-height: 1.6;
+}
+
+.about-content p span{
+    font-weight: 700;
+}
+
+/*----------------Skill-----------------*/
+
+.skill{
+    background-color:#fafafa ;
+}
+
+.skill-div{
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.study-img{
+    width: 600px;
+    height:400px;
+}
+.skill-div .row{
+    display: flex;
+}
