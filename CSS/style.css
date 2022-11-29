@@ -11,7 +11,7 @@ html{
 
 section{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .header{
@@ -46,7 +46,7 @@ nav{
 }
 
 .header .logo a {
-    color: #333;;
+    color: #333;
     text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ nav{
 /*-------------About-----------------*/
 
 .about{
-    background-color:#fafafa ;
+    background-color:#ededed ;
 }
 .about-me{
     width: 90vw;
@@ -161,7 +161,7 @@ section .profile{
     font-size: 40px;
     
     letter-spacing: 1px;
-    color: #111;
+    color: #333;
     font-weight: 700;
     padding-top:30px;
     margin-left: 8px;
@@ -173,7 +173,7 @@ section .profile{
     text-align:start ;
     justify-content: center;
     margin: 40px 0;
-    color: #555;;
+    color: #555;
     line-height: 1.6;
 }
 
@@ -184,7 +184,7 @@ section .profile{
 /*----------------Skill-----------------*/
 
 .skill{
-    background-color:#fafafa ;
+    background-color:#fafafa;
 }
 
 .skill-div{
@@ -199,4 +199,234 @@ section .profile{
 }
 .skill-div .row{
     display: flex;
+    padding-top: 70px;
+    
+}
+
+.row .col-2{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    column-gap: 10px;
+    justify-items: center;
+    
+}
+.skillhead{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.icon-box{
+    text-align: center;
+    
+}
+.icon-box img{
+    padding: 10px;
+    width: ;
+    justify-items: center;
+}
+.col-1{
+    align-self: flex-start;
+}
+
+/*----------------project---------------*/
+
+.project{
+    background-color: ##ffffff;
+    min-height: 100vh;
+}
+
+.project-com{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-bottom: 50px;
+    
+}
+
+.project .container{
+    width: 90vw;
+    min-height: 100vh;
+    margin: auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-rows: repeat(1fr 5fr 5fr 5fr 5fr);
+    
+}
+.p-1-img img{
+    height: 250px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.project-head{
+   
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 700;
+
+}
+.project-head h1{
+    padding-bottom: 30px;
+}
+
+/*------------contact--------------*/
+
+
+.contact{
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)), url("../image/home.jpg");
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+  
+
+.form{
+    width: 400px;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: 100px;
+}
+
+.form-title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.box-group{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    background: none;
+    border:1px solid #a1a1a1 ;
+    outline: none;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 1;
+    background-color: #f0f0f0;
+
+}
+
+.form-lable{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: black;
+    padding: 0 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    background-color:#f0f0f0 ;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.form-message{
+    min-height: 250px;
+}
+
+
+.box-group:focus+ .form-lable{
+    top: -10px;
+    z-index: 2;
+    font-weight: 500;
+}
+.form-control:focus{
+    border: 1px solid;
+}
+.box-group:not(:focus):valid+label{
+    top: -10px;
+    z-index: 2;
+}
+
+.form-butten button{
+    display: flex;
+    padding: 12px 32px;
+    background-color: #facf0f;
+    border-radius: 6px;
+}
+
+.contact-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    margin: auto;
+    
+}
+.column2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 0;
+    gap:30px;
+}
+.svg-img img{
+    width: 300px;
+    height: 250px;
+    display: grid;
+    justify-items: center;
+}
+
+.contact-icon ul li{
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+   
+}
+.contact-detail{
+    margin-left: 50px;
+}
+.contact-detail h1{
+    font-size: 40px;
+    
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 700;
+}
+
+.contact-detail p{
+    color: #555;
+    line-height: 1.6;
+}
+.contact-icon ul li a{
+    text-align: center;
+    padding: 8px;
+    align-content: center;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon ul li a h3{
+    text-align: center;
+}
+
+
+/*----------footer---------*/
+
+.footer{
+    background-color: black;
+    height: 50px;
+    color: #eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
